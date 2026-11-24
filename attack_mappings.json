@@ -1,0 +1,16 @@
+{
+  "description": "Indicator-to-technique mappings used by mitre_linux_analyzer.py",
+  "techniques": {
+    "T1027": ["high_entropy", "packed", "upx", "stripped"],
+    "T1059.004": ["execve", "system", "popen", "/bin/sh", "bash"],
+    "T1105": ["curl", "wget", "socket", "connect"],
+    "T1543.002": ["systemd", ".service"],
+    "T1574.006": ["ld.so.preload", "LD_PRELOAD", "dlopen"],
+    "T1622": ["ptrace", "TracerPid", "/proc/self/status"],
+    "T1082": ["uname", "getuid", "/proc/"],
+    "T1573": ["ssl", "tls", "openssl", "aes"],
+    "T1055": ["ptrace", "process_vm_writev", "memfd_create"],
+    "T1222.002": ["chmod", "chown", "setuid"]
+  },
+  "notes": "These are heuristic indicators for static triage. Dynamic analysis and behavioral telemetry provide stronger evidence."
+}
